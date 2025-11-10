@@ -1,0 +1,242 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="tr" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Alfa Çilingir - Hızlı ve Güvenilir Çilingir Hizmeti"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body
+    class="bg-slate-50 text-slate-800 flex flex-col min-h-screen"
+    style="font-family: 'Inter', sans-serif;"
+  >
+    <header
+      class="bg-white/80 backdrop-blur-lg border-b border-slate-200 sticky top-0 z-50"
+    >
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="/" class="text-2xl font-extrabold text-blue-700"
+          >Alfa Çilingir</a
+        >
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-2">
+          <a
+            href="/"
+            class="px-4 py-2 rounded-md hover:bg-blue-50 hover:text-blue-700 transition-colors"
+            >Anasayfa</a
+          >
+          <a
+            href="/hizmetler"
+            class="px-4 py-2 rounded-md hover:bg-blue-50 hover:text-blue-700 transition-colors"
+            >Hizmetler</a
+          >
+          <a
+            href="/bolgeler"
+            class="px-4 py-2 rounded-md hover:bg-blue-50 hover:text-blue-700 transition-colors"
+            >Bölgeler</a
+          >
+          <a
+            href="/hakkimizda"
+            class="px-4 py-2 rounded-md hover:bg-blue-50 hover:text-blue-700 transition-colors"
+            >Hakkımızda</a
+          >
+          <a
+            href="/iletisim"
+            class="px-4 py-2 rounded-md hover:bg-blue-50 hover:text-blue-700 transition-colors"
+            >İletişim</a
+          >
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button
+            id="menu-btn"
+            class="block hamburger md:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile Menu -->
+      <div id="menu" class="hidden md:hidden border-t border-slate-200">
+        <a href="/" class="block py-3 px-6 text-sm hover:bg-blue-50">Anasayfa</a
+        >
+        <a href="/hizmetler" class="block py-3 px-6 text-sm hover:bg-blue-50"
+          >Hizmetler</a
+        >
+        <a href="/bolgeler" class="block py-3 px-6 text-sm hover:bg-blue-50"
+          >Bölgeler</a
+        >
+        <a href="/hakkimizda" class="block py-3 px-6 text-sm hover:bg-blue-50"
+          >Hakkımızda</a
+        >
+        <a href="/iletisim" class="block py-3 px-6 text-sm hover:bg-blue-50"
+          >İletişim</a
+        >
+      </div>
+    </header>
+    <main class="flex-grow">
+      <slot />
+    </main>
+    <footer class="bg-gray-900 text-white mt-20">
+      <div class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-bold text-yellow-600 mb-4">
+              Alfa Çilingir
+            </h3>
+            <p class="text-gray-400">
+              7/24 acil çilingir hizmeti. Güvenilir, hızlı ve profesyonel.
+            </p>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Hizmetlerimiz</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                <a
+                  href="/hizmetlerimiz#kapi-acma"
+                  class="hover:text-yellow-600 transition">Kapı Açma</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/hizmetlerimiz#kilit-tamir"
+                  class="hover:text-yellow-600 transition"
+                  >Kilit Tamir/Değişim</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/hizmetlerimiz#arac-kapisi"
+                  class="hover:text-yellow-600 transition">Araç Kapısı Açma</a
+                >
+              </li>
+              <li>
+                <a
+                  href="/hizmetlerimiz#kasa-acma"
+                  class="hover:text-yellow-600 transition">Kasa Açma</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Hizmet Bölgeleri</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>Beylikdüzü</li>
+              <li>Büyükçekmece</li>
+              <li>Esenyurt</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-lg font-semibold mb-4">İletişim</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li>
+                📞 <a
+                  href="tel:+905001234567"
+                  class="hover:text-yellow-600 transition">0500 123 45 67</a
+                >
+              </li>
+              <li>
+                📧 <a
+                  href="mailto:info@alfacilingir.com"
+                  class="hover:text-yellow-600 transition"
+                  >info@alfacilingir.com</a
+                >
+              </li>
+              <li>📍 İstanbul, Türkiye</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>© 2025 Alfa Çilingir. Tüm hakları saklıdır.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      if (btn && menu) {
+        btn.addEventListener("click", () => {
+          btn.classList.toggle("open");
+          menu.classList.toggle("hidden");
+        });
+      }
+    </script>
+    <style>
+      .hamburger {
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+        transition: all 0.25s;
+        position: relative;
+      }
+
+      .hamburger-top,
+      .hamburger-middle,
+      .hamburger-bottom {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 24px;
+        height: 2px;
+        background: #1e293b; /* slate-800 */
+        transform: rotate(0);
+        transition: all 0.5s;
+      }
+
+      .hamburger-middle {
+        transform: translateY(7px);
+      }
+
+      .hamburger-bottom {
+        transform: translateY(14px);
+      }
+
+      .open {
+        transform: rotate(90deg);
+        transform: translateY(0px);
+      }
+
+      .open .hamburger-top {
+        transform: rotate(45deg) translateY(6px) translate(6px);
+      }
+
+      .open .hamburger-middle {
+        display: none;
+      }
+
+      .open .hamburger-bottom {
+        transform: rotate(-45deg) translateY(6px) translate(-6px);
+      }
+    </style>
+  </body>
+</html>
