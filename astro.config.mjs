@@ -10,6 +10,9 @@ export default defineConfig({
   adapter: cloudflare(),
   vite: {
     plugins: [tailwindcss()],
+    ssr: {
+      external: [],
+    },
   },
   build: {
     inlineStylesheets: "always",
