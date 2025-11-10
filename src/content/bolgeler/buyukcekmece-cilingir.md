@@ -29,5 +29,5 @@ Büyükçekmece sakinlerinin en çok talep ettiği hizmetlerimiz:
 Büyükçekmece'de çilingir ihtiyacınız olduğunda, aklınıza gelen ilk isim Alfa Çilingir olsun. Güvenliğiniz bizim için önemlidir.
 
 <div class="text-center mt-8">
-  <a href="tel:5555555555" class="bg-blue-700 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-800 transition text-xl no-underline">Uzman Desteği Alın</a>
+  <a href="tel:5555555555" class="bg-blue-700 text-white font-medium py-3 px-8 rounded-lg hover:bg-blue-800 transition text-xl no-underline">Uzman Desteği Alın</a>
 </div>

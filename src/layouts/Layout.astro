@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { Menu, X } from "@lucide/astro";
 
 interface Props {
   title: string;
@@ -37,35 +38,23 @@ const { title } = Astro.props;
       <nav
         class="container mx-auto px-6 py-4 flex justify-between items-center"
       >
-        <a href="/" class="text-2xl font-extrabold text-blue-700"
+        <a href="/" class="text-2xl font-semibold text-blue-700"
           >Alfa Çilingir</a
         >
 
         <!-- Desktop Menu -->
-        <div class="hidden md:flex items-center space-x-2">
-          <a
-            href="/"
-            class="px-4 py-2 rounded-md hover:bg-blue-50 hover:text-blue-700 transition-colors"
-            >Anasayfa</a
-          >
-          <a
-            href="/hizmetler"
-            class="px-4 py-2 rounded-md hover:bg-blue-50 hover:text-blue-700 transition-colors"
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="/" class="hover:text-blue-700 transition-colors">Anasayfa</a>
+          <a href="/hizmetler" class="hover:text-blue-700 transition-colors"
             >Hizmetler</a
           >
-          <a
-            href="/bolgeler"
-            class="px-4 py-2 rounded-md hover:bg-blue-50 hover:text-blue-700 transition-colors"
+          <a href="/bolgeler" class="hover:text-blue-700 transition-colors"
             >Bölgeler</a
           >
-          <a
-            href="/hakkimizda"
-            class="px-4 py-2 rounded-md hover:bg-blue-50 hover:text-blue-700 transition-colors"
+          <a href="/hakkimizda" class="hover:text-blue-700 transition-colors"
             >Hakkımızda</a
           >
-          <a
-            href="/iletisim"
-            class="px-4 py-2 rounded-md hover:bg-blue-50 hover:text-blue-700 transition-colors"
+          <a href="/iletisim" class="hover:text-blue-700 transition-colors"
             >İletişim</a
           >
         </div>
@@ -76,9 +65,8 @@ const { title } = Astro.props;
             id="menu-btn"
             class="block hamburger md:hidden focus:outline-none"
           >
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
+            <Menu class="w-6 h-6" id="menu-open-icon" />
+            <X class="w-6 h-6 hidden" id="menu-close-icon" />
           </button>
         </div>
       </nav>
@@ -108,7 +96,7 @@ const { title } = Astro.props;
       <div class="container mx-auto px-4 py-12">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 class="text-xl font-bold text-yellow-600 mb-4">
+            <h3 class="text-xl font-medium text-yellow-600 mb-4">
               Alfa Çilingir
             </h3>
             <p class="text-gray-400">
@@ -183,60 +171,16 @@ const { title } = Astro.props;
     <script>
       const btn = document.getElementById("menu-btn");
       const menu = document.getElementById("menu");
+      const openIcon = document.getElementById("menu-open-icon");
+      const closeIcon = document.getElementById("menu-close-icon");
 
-      if (btn && menu) {
+      if (btn && menu && openIcon && closeIcon) {
         btn.addEventListener("click", () => {
-          btn.classList.toggle("open");
           menu.classList.toggle("hidden");
+          openIcon.classList.toggle("hidden");
+          closeIcon.classList.toggle("hidden");
         });
       }
     </script>
-    <style>
-      .hamburger {
-        cursor: pointer;
-        width: 24px;
-        height: 24px;
-        transition: all 0.25s;
-        position: relative;
-      }
-
-      .hamburger-top,
-      .hamburger-middle,
-      .hamburger-bottom {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 24px;
-        height: 2px;
-        background: #1e293b; /* slate-800 */
-        transform: rotate(0);
-        transition: all 0.5s;
-      }
-
-      .hamburger-middle {
-        transform: translateY(7px);
-      }
-
-      .hamburger-bottom {
-        transform: translateY(14px);
-      }
-
-      .open {
-        transform: rotate(90deg);
-        transform: translateY(0px);
-      }
-
-      .open .hamburger-top {
-        transform: rotate(45deg) translateY(6px) translate(6px);
-      }
-
-      .open .hamburger-middle {
-        display: none;
-      }
-
-      .open .hamburger-bottom {
-        transform: rotate(-45deg) translateY(6px) translate(-6px);
-      }
-    </style>
   </body>
 </html>

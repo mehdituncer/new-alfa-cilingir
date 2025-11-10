@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { MoveRight, Car, Vault, DoorClosedLocked, Lock } from "@lucide/astro";
+import { MoveRight, KeyRound, Lock, Car, ShieldCheck } from "@lucide/astro";
 ---
 
 <Layout title="Alfa Çilingir - Modern ve Hızlı Çilingir Hizmeti">
@@ -39,7 +39,7 @@ import { MoveRight, Car, Vault, DoorClosedLocked, Lock } from "@lucide/astro";
           <a
             href="tel:05411261760"
             class="flex items-center justify-center gap-1 bg-blue-700 text-white font-medium py-3 px-8 rounded-lg hover:bg-blue-800 transition-transform transform hover:scale-105 shadow-lg"
-            >Şimdi Arayın <MoveRight class="text-2xl" /></a
+            >Şimdi Arayın <MoveRight class="w-6 h-6" /></a
           >
           <a
             href="https://wa.me/905411261760"
@@ -90,10 +90,9 @@ import { MoveRight, Car, Vault, DoorClosedLocked, Lock } from "@lucide/astro";
           <div
             class="bg-blue-100 text-blue-700 rounded-full w-16 h-16 flex items-center justify-center mb-6"
           >
-            <DoorClosedLocked class="size-8" />
+            <KeyRound class="w-8 h-8" />
           </div>
-
-          <h3 class="font-bold text-xl mb-3 text-slate-900">Kapı Açma</h3>
+          <h3 class="font-medium text-xl mb-3 text-slate-900">Kapı Açma</h3>
           <p class="text-slate-600 text-sm">
             Modern ekipmanlarımızla kapınıza zarar vermeden, hızlı ve güvenli
             kapı açma hizmeti.
@@ -107,9 +106,11 @@ import { MoveRight, Car, Vault, DoorClosedLocked, Lock } from "@lucide/astro";
           <div
             class="bg-blue-100 text-blue-700 rounded-full w-16 h-16 flex items-center justify-center mb-6"
           >
-            <Lock class="size-8" />
+            <Lock class="w-8 h-8" />
           </div>
-          <h3 class="font-bold text-xl mb-3 text-slate-900">Kilit Değişimi</h3>
+          <h3 class="font-medium text-xl mb-3 text-slate-900">
+            Kilit Değişimi
+          </h3>
           <p class="text-slate-600 text-sm">
             Güvenliğinizi artırmak için eski veya bozuk kilitlerinizi
             yenileriyle değiştiriyoruz.
@@ -123,9 +124,9 @@ import { MoveRight, Car, Vault, DoorClosedLocked, Lock } from "@lucide/astro";
           <div
             class="bg-blue-100 text-blue-700 rounded-full w-16 h-16 flex items-center justify-center mb-6"
           >
-            <Car class="size-8" />
+            <Car class="w-8 h-8" />
           </div>
-          <h3 class="font-bold text-xl mb-3 text-slate-900">Oto Çilingir</h3>
+          <h3 class="font-medium text-xl mb-3 text-slate-900">Oto Çilingir</h3>
           <p class="text-slate-600 text-sm">
             Aracınızın kapısını, markası ne olursa olsun, hasarsız bir şekilde
             açıyoruz.
@@ -139,9 +140,9 @@ import { MoveRight, Car, Vault, DoorClosedLocked, Lock } from "@lucide/astro";
           <div
             class="bg-blue-100 text-blue-700 rounded-full w-16 h-16 flex items-center justify-center mb-6"
           >
-            <Vault class="size-8" />
+            <ShieldCheck class="w-8 h-8" />
           </div>
-          <h3 class="font-bold text-xl mb-3 text-slate-900">Kasa Açma</h3>
+          <h3 class="font-medium text-xl mb-3 text-slate-900">Kasa Açma</h3>
           <p class="text-slate-600 text-sm">
             Her türlü şifreli veya anahtarlı kasayı, özel ekipmanlarımızla
             profesyonelce açıyoruz.
@@ -182,7 +183,7 @@ import { MoveRight, Car, Vault, DoorClosedLocked, Lock } from "@lucide/astro";
         >
         <span
           class="bg-white shadow-md py-3 px-6 rounded-full text-lg font-semibold text-slate-700"
-          >Bahçeşehir</span
+          >Küçükçekmece</span
         >
       </div>
     </div>
@@ -239,7 +240,7 @@ import { MoveRight, Car, Vault, DoorClosedLocked, Lock } from "@lucide/astro";
         ],
       })}
     />
-    <div class="container mx-auto px-6 max-w-3xl">
+    <div class="container mx-auto px-6 max-w-4xl">
       <div class="text-center mb-16">
         <h2 class="text-4xl font-semibold text-slate-900">Sık Sorun Sorular</h2>
         <p class="text-slate-600 mt-4">
@@ -389,14 +390,16 @@ import { MoveRight, Car, Vault, DoorClosedLocked, Lock } from "@lucide/astro";
             alt="Beylikdüzü Çilingir"
           />
           <div class="p-6">
-            <h3 class="font-bold text-xl mb-3 text-slate-900">
+            <h3 class="font-semibold text-xl mb-3 text-slate-900">
               Beylikdüzü Çilingir: 15 Dakikada Yanınızdayız!
             </h3>
             <p class="text-slate-600 text-sm mb-4">
               Beylikdüzü'nde kapıda mı kaldınız? Acil çilingir ihtiyacınız için
               profesyonel çözümler sunuyoruz.
             </p>
-            <span class="font-semibold text-blue-700">Devamını Oku &rarr;</span>
+            <span class="flex items-center gap-2 font-semibold text-blue-700"
+              >Devamını Oku <MoveRight /></span
+            >
           </div>
         </a>
         <a
@@ -409,34 +412,38 @@ import { MoveRight, Car, Vault, DoorClosedLocked, Lock } from "@lucide/astro";
             alt="Büyükçekmece Çilingir"
           />
           <div class="p-6">
-            <h3 class="font-bold text-xl mb-3 text-slate-900">
+            <h3 class="font-semibold text-xl mb-3 text-slate-900">
               Büyükçekmece Çilingir: Güvenilir ve Hızlı Çözümler
             </h3>
             <p class="text-slate-600 text-sm mb-4">
               Büyükçekmece ve çevresinde 7/24 kesintisiz, garantili çilingir
               hizmeti sunuyoruz.
             </p>
-            <span class="font-semibold text-blue-700">Devamını Oku &rarr;</span>
+            <span class="flex items-center gap-2 font-semibold text-blue-700"
+              >Devamını Oku <MoveRight /></span
+            >
           </div>
         </a>
         <a
-          href="#"
+          href="/bolgeler/avcilar-cilingir"
           class="bg-white rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 block overflow-hidden"
         >
           <img
-            src="https://images.unsplash.com/photo-1560041136-5d2d8a933de3?q=80&w=1974&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1596741884139-94a3e79742a7?w=1200&h=600&fit=crop"
             class="w-full h-48 object-cover"
-            alt="Kilit Seçimi"
+            alt="Avcılar Çilingir"
           />
           <div class="p-6">
-            <h3 class="font-bold text-xl mb-3 text-slate-900">
-              Doğru Kilit Seçimi Nasıl Yapılır?
+            <h3 class="font-semibold text-xl mb-3 text-slate-900">
+              Avcılar Çilingir - E-5 ve Sahil Hattı Acil Servis
             </h3>
             <p class="text-slate-600 text-sm mb-4">
-              Güvenliğiniz için en doğru kilidi seçerken nelere dikkat etmeniz
-              gerektiğini anlatıyoruz.
+              Avcılar'da kapıda mı kaldınız? Acil çilingir ihtiyacınız için
+              profesyonel çözümler sunuyoruz.
             </p>
-            <span class="font-semibold text-blue-700">Devamını Oku &rarr;</span>
+            <span class="flex items-center gap-2 font-semibold text-blue-700"
+              >Devamını Oku <MoveRight /></span
+            >
           </div>
         </a>
       </div>

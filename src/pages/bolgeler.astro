@@ -1,10 +1,283 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Hizmet Bölgelerimiz - Alfa Çilingir">
-  <div class="container mx-auto px-6 py-12">
-    <h1 class="text-4xl font-bold text-center mb-12">Hizmet Bölgelerimiz</h1>
-    <p class="text-center text-lg">Burada hizmet verdiğiniz bölgeler hakkında detaylı bilgi ve belki bir harita paylaşabilirsiniz.</p>
+  <div class="bg-white py-24">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h1 class="text-4xl md:text-5xl font-semibold text-slate-900">
+          Geniş Servis Ağımız
+        </h1>
+        <p class="text-slate-600 mt-4 max-w-2xl mx-auto">
+          İstanbul'un Avrupa yakasında, aşağıda listelenen tüm bölgelere ve
+          çevrelerine 15-30 dakika içinde acil çilingir hizmeti sunuyoruz.
+        </p>
+      </div>
+
+      <div class="space-y-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div
+              class="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold mb-4 text-sm"
+            >
+              10-15 dakika Varış
+            </div>
+            <h2 class="text-3xl font-medium text-gray-900 mb-6">
+              Beylikdüzü Çilingir - 7/24 Hızlı ve Güvenilir Hizmet
+            </h2>
+            <p class="text-lg text-gray-600 mb-6">
+              Beylikdüzü ve çevresinde 7/24 çilingir hizmeti. Adnan Kahveci,
+              Yakuplu, Cumhuriyet, Barış mahallelerinde 15 dakikada
+              kapınızdayız.
+            </p>
+            <div class="bg-blue-50 border-l-4 border-blue-700 p-6 mb-6">
+              <h3 class="font-medium text-gray-900 mb-2">
+                Hizmet Verdiğimiz Mahalleler:
+              </h3>
+              <ul class="grid grid-cols-2 gap-2 text-gray-700">
+                <li>• Adnan Kahveci</li><li>• Yakuplu</li><li>
+                  • Cumhuriyet
+                </li><li>• Barış</li><li>• Marmara</li><li>• Sahil</li><li>
+                  • Gürpınar
+                </li><li>• Büyükşehir</li>
+              </ul>
+            </div>
+            <a
+              href="/bolgeler/beylikduzu-cilingir"
+              class="inline-flex items-center bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold transition"
+            >
+              Detaylı Bilgi
+              <svg
+                class="w-4 h-4 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"></path></svg
+              >
+            </a>
+          </div>
+          <div class="relative">
+            <img
+              src="https://images.unsplash.com/photo-1582560469781-1965b9af903d?w=1200&h=600&fit=crop"
+              alt="Beylikdüzü Çilingir"
+              class="rounded-2xl shadow-2xl"
+            />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="lg:order-2">
+            <div
+              class="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold mb-4 text-sm"
+            >
+              12-18 dakika Varış
+            </div>
+            <h2 class="text-3xl font-medium text-gray-900 mb-6">
+              Büyükçekmece Çilingir - 7/24 Güvenilir Acil Çilingir
+            </h2>
+            <p class="text-lg text-gray-600 mb-6">
+              Büyükçekmece ve çevresinde 7/24 profesyonel çilingir hizmeti.
+              Mimarsinan, Kumburgaz, Pınartepe mahallelerinde 15 dakikada
+              yanınızdayız.
+            </p>
+            <div class="bg-blue-50 border-l-4 border-blue-700 p-6 mb-6">
+              <h3 class="font-medium text-gray-900 mb-2">
+                Hizmet Verdiğimiz Mahalleler:
+              </h3>
+              <ul class="grid grid-cols-2 gap-2 text-gray-700">
+                <li>• Mimarsinan</li><li>• Kumburgaz</li><li>• Pınartepe</li><li
+                >
+                  • Güzelce
+                </li><li>• Fatih</li><li>• Cumhuriyet</li><li>• Atatürk</li><li>
+                  • Karaağaç
+                </li>
+              </ul>
+            </div>
+            <a
+              href="/bolgeler/buyukcekmece-cilingir"
+              class="inline-flex items-center bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold transition"
+            >
+              Detaylı Bilgi
+              <svg
+                class="w-4 h-4 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"></path></svg
+              >
+            </a>
+          </div>
+          <div class="relative lg:order-1">
+            <img
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=600&fit=crop"
+              alt="Büyükçekmece Çilingir"
+              class="rounded-2xl shadow-2xl"
+            />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div
+              class="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold mb-4 text-sm"
+            >
+              10-20 dakika Varış
+            </div>
+            <h2 class="text-3xl font-medium text-gray-900 mb-6">
+              Esenyurt Çilingir - Kalabalıkta Kaybolmayın
+            </h2>
+            <p class="text-lg text-gray-600 mb-6">
+              Esenyurt'un her noktasına hızlı ulaşım. Kapı açma, kilit değişimi
+              ve oto çilingir hizmetlerimizle yanınızdayız.
+            </p>
+            <div class="bg-blue-50 border-l-4 border-blue-700 p-6 mb-6">
+              <h3 class="font-medium text-gray-900 mb-2">
+                Öne Çıkan Mahalleler:
+              </h3>
+              <ul class="grid grid-cols-2 gap-2 text-gray-700">
+                <li>• İncirtepe</li><li>• Pınar</li><li>• Örnek</li><li>
+                  • Saadetdere
+                </li><li>• Namık Kemal</li><li>• Fatih</li>
+              </ul>
+            </div>
+            <a
+              href="/bolgeler/esenyurt-cilingir"
+              class="inline-flex items-center bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold transition"
+            >
+              Detaylı Bilgi
+              <svg
+                class="w-4 h-4 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"></path></svg
+              >
+            </a>
+          </div>
+          <div class="relative">
+            <img
+              src="https://images.unsplash.com/photo-1605899435993-69d581843558?w=1200&h=600&fit=crop"
+              alt="Esenyurt Çilingir"
+              class="rounded-2xl shadow-2xl"
+            />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="lg:order-2">
+            <div
+              class="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold mb-4 text-sm"
+            >
+              15-25 dakika Varış
+            </div>
+            <h2 class="text-3xl font-medium text-gray-900 mb-6">
+              Avcılar Çilingir - Sahilden Merkeze Hizmet
+            </h2>
+            <p class="text-lg text-gray-600 mb-6">
+              Avcılar sahil hattı ve E-5 çevresindeki tüm mahallelere acil ve
+              güvenilir çilingir hizmeti sunuyoruz.
+            </p>
+            <div class="bg-blue-50 border-l-4 border-blue-700 p-6 mb-6">
+              <h3 class="font-medium text-gray-900 mb-2">
+                Öne Çıkan Mahalleler:
+              </h3>
+              <ul class="grid grid-cols-2 gap-2 text-gray-700">
+                <li>• Ambarlı</li><li>• Cihangir</li><li>• Denizköşkler</li><li>
+                  • Gümüşpala
+                </li><li>• Üniversite</li><li>• Merkez</li>
+              </ul>
+            </div>
+            <a
+              href="/bolgeler/avcilar-cilingir"
+              class="inline-flex items-center bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold transition"
+            >
+              Detaylı Bilgi
+              <svg
+                class="w-4 h-4 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"></path></svg
+              >
+            </a>
+          </div>
+          <div class="relative lg:order-1">
+            <img
+              src="https://images.unsplash.com/photo-1596741884139-94a3e79742a7?w=1200&h=600&fit=crop"
+              alt="Avcılar Çilingir"
+              class="rounded-2xl shadow-2xl"
+            />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <div
+              class="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-semibold mb-4 text-sm"
+            >
+              15-20 dakika Varış
+            </div>
+            <h2 class="text-3xl font-medium text-gray-900 mb-6">
+              Bahçeşehir Çilingir - Modern Çözümler
+            </h2>
+            <p class="text-lg text-gray-600 mb-6">
+              Bahçeşehir ve Ispartakule bölgesindeki siteler ve iş merkezleri
+              için hızlı, güvenilir ve modern çilingir hizmetleri.
+            </p>
+            <div class="bg-blue-50 border-l-4 border-blue-700 p-6 mb-6">
+              <h3 class="font-medium text-gray-900 mb-2">
+                Öne Çıkan Bölgeler:
+              </h3>
+              <ul class="grid grid-cols-2 gap-2 text-gray-700">
+                <li>• Bahçeşehir 1. Kısım</li><li>• Bahçeşehir 2. Kısım</li><li>
+                  • Ispartakule
+                </li><li>• Boğazköy</li><li>• Hoşdere</li>
+              </ul>
+            </div>
+            <a
+              href="/bolgeler/bahcesehir-cilingir"
+              class="inline-flex items-center bg-blue-700 hover:bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold transition"
+            >
+              Detaylı Bilgi
+              <svg
+                class="w-4 h-4 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                ><path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"></path></svg
+              >
+            </a>
+          </div>
+          <div class="relative">
+            <img
+              src="https://images.unsplash.com/photo-1578575437131-7931c4a42b5a?w=1200&h=600&fit=crop"
+              alt="Bahçeşehir Çilingir"
+              class="rounded-2xl shadow-2xl"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </Layout>
