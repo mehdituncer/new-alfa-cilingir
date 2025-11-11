@@ -61,11 +61,14 @@ import { MoveRight, KeyRound, Lock, Car, ShieldCheck } from "@lucide/astro";
           >
         </div>
       </div>
-      <div class="flex items-center justify-center w-full sm:w-1/2">
+      <div
+        class="flex items-center justify-center w-full sm:w-1/2 aspect-square sm:aspect-auto animate-pulse bg-slate-200 rounded-lg"
+      >
         <img
           src="/hero-image.svg"
           alt="Çilingir"
           class="w-full h-full object-cover"
+          fetchpriority="high"
         />
       </div>
     </div>

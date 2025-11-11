@@ -56,8 +56,12 @@ const { title } = Astro.props;
             id="menu-btn"
             class="block hamburger md:hidden focus:outline-none"
           >
-            <Menu class="w-6 h-6" id="menu-open-icon" />
-            <X class="w-6 h-6 hidden" id="menu-close-icon" />
+            <Menu aria-label="menu-open" class="w-6 h-6" id="menu-open-icon" />
+            <X
+              aria-label="menu-close"
+              class="w-6 h-6 hidden"
+              id="menu-close-icon"
+            />
           </button>
         </div>
       </nav>
