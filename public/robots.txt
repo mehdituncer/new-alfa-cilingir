@@ -1,3 +1,4 @@
+
 User-agent: *
 Allow: /
-Sitemap: https://www.alfacilingir.com/sitemap-index.xml
+Sitemap: https://alfacilingir.com/sitemap-index.xml
