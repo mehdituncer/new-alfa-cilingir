@@ -30,5 +30,5 @@ Geniş hizmet yelpazemizle Beylikdüzü'ndeki tüm anahtar ve kilit sorunların�
 Beylikdüzü'nde güvenilir, hızlı ve profesyonel bir çilingir arıyorsanız, hemen bize ulaşın. Bir telefon kadar yakınız!
 
 <div class="text-center mt-8">
-  <a href="tel:5555555555" class="bg-blue-700 text-white font-medium py-3 px-8 rounded-lg hover:bg-blue-800 transition text-xl no-underline">Hemen Ara</a>
+  <a href="tel:05416247982" class="bg-blue-700 text-white font-medium py-3 px-8 rounded-lg hover:bg-blue-800 transition text-xl no-underline">Hemen Ara</a>
 </div>
