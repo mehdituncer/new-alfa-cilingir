@@ -6,6 +6,7 @@ import {
 } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import Breadcrumb from "../../components/Breadcrumb.astro";
+import CallToActionButton from "../../components/CallToActionButton.astro";
 
 export async function getStaticPaths() {
   const allHizmetler = await getCollection("hizmetler");
@@ -26,12 +27,16 @@ const { Content } = await entry.render();
 const crumbs = [
   { label: "Anasayfa", url: "/" },
   { label: "Hizmetler", url: "/hizmetler" },
-  { label: entry.data.title, url: `/hizmetler/${entry.slug}` },
+  {
+    label: entry.data.shortTitle || entry.data.title,
+    url: `/hizmetler/${entry.slug}`,
+  },
 ];
 ---
 
 <Layout title={entry.data.title} description={entry.data.description}>
   <article class="mx-auto px-6 py-12 max-w-4xl">
+    <CallToActionButton />
     <Breadcrumb crumbs={crumbs} />
     <div class="prose max-w-none mt-8">
       <h1>{entry.data.title}</h1>

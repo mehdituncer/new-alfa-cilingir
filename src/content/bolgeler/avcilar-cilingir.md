@@ -1,5 +1,6 @@
 ---
 title: "Avcılar Çilingir - E-5 ve Sahil Hattı Acil Servis"
+shortTitle: "Avcılar Çilingir"
 description: "Avcılar bölgesinde profesyonel çilingir hizmeti. Ambarlı, Cihangir, Denizköşkler ve Üniversite mahallelerine hızlı ulaşım. Hasarsız kapı açma."
 publishDate: "2025-11-10"
 image: "https://images.unsplash.com/photo-1596741884139-94a3e79742a7?w=1200&h=600&fit=crop"

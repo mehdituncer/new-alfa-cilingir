@@ -27,7 +27,10 @@ const { Content } = await entry.render();
 const crumbs = [
   { label: "Anasayfa", url: "/" },
   { label: "Blog", url: "/blog" },
-  { label: entry.data.title, url: `/blog/${entry.slug}` },
+  {
+    label: entry.data.shortTitle || entry.data.title,
+    url: `/blog/${entry.slug}`,
+  },
 ];
 ---
 

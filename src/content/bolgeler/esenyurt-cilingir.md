@@ -1,5 +1,6 @@
 ---
 title: "Esenyurt Çilingir - 7/24 Acil Servis"
+shortTitle: "Esenyurt Çilingir"
 description: "Esenyurt genelinde 20 dakika içinde adrese ulaşım garantisiyle profesyonel çilingir hizmeti. Kapı açma, kilit değişimi ve oto çilingir için arayın."
 publishDate: "2025-11-10"
 image: "https://images.unsplash.com/photo-1605899435993-69d581843558?w=1200&h=600&fit=crop"

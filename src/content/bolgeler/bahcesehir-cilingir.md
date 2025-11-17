@@ -1,5 +1,6 @@
 ---
 title: "Bahçeşehir Çilingir - Modern ve Güvenilir Çözümler"
+shortTitle: "Bahçeşehir Çilingir"
 description: "Bahçeşehir ve Ispartakule bölgesinde acil çilingir hizmeti. Site ve villa kapıları, akıllı kilit sistemleri ve oto çilingir konusunda uzmanız."
 publishDate: "2025-11-10"
 image: "https://images.unsplash.com/photo-1578575437131-7931c4a42b5a?w=1200&h=600&fit=crop"

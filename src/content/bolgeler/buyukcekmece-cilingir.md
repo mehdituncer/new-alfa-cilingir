@@ -1,5 +1,6 @@
 ---
 title: "Büyükçekmece Çilingir: Güvenilir ve Hızlı Çözümler"
+shortTitle: "Büyükçekmece Çilingir"
 description: "Büyükçekmece ve çevresinde 7/24 profesyonel çilingir hizmeti. Garantili işçilik, modern ekipmanlar ve hızlı ulaşım için Alfa Çilingir."
 publishDate: "2025-11-07"
 image: "https://images.unsplash.com/photo-1617053313489-42c384a4b2a8?q=80&w=1964&auto=format&fit=crop"
