@@ -4,6 +4,7 @@ import {
   getEntryBySlug,
   type CollectionEntry,
 } from "astro:content";
+import { Image } from "astro:assets";
 import Layout from "../../layouts/Layout.astro";
 import Breadcrumb from "../../components/Breadcrumb.astro";
 
@@ -41,10 +42,13 @@ const crumbs = [
       <h1>{entry.data.title}</h1>
       {
         entry.data.image && (
-          <img
+          <Image
             src={entry.data.image}
             alt={entry.data.title}
+            width={1200}
+            height={600}
             class="rounded-xl shadow-lg my-8"
+            fetchpriority="high"
           />
         )
       }

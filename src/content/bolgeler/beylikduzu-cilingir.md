@@ -3,7 +3,7 @@ title: "Beylikdüzü Çilingir: 15 Dakikada Yanınızdayız!"
 shortTitle: "Beylikdüzü Çilingir"
 description: "Beylikdüzü ve çevresinde 15 dakikada kapınızdayız. Profesyonel, hasarsız ve 7/24 çilingir hizmeti için Alfa Çilingir'i arayın."
 publishDate: "2025-11-08"
-image: "/beylikduzu-cilingir.png"
+image: "/beylikduzu-cilingir.avif"
 ---
 
 Beylikdüzü'nde kapıda mı kaldınız? Anahtarınızı mı unuttunuz veya kilidiniz mi bozuldu? Panik yapmayın! Alfa Çilingir olarak, Beylikdüzü'nün her mahallesine **15 dakika gibi kısa bir sürede** ulaşarak, modern ekipmanlarımız ve uzman ekibimizle kapı açma, kilit değiştirme ve anahtar çoğaltma gibi tüm çilingir ihtiyaçlarınızı karşılıyoruz.
