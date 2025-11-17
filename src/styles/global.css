@@ -1,19 +1,17 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
-@font-face {
-  font-family: alfa;
+/*@font-face {
+ font-family: alfa;
   font-style: normal;
   font-weight: 500;
   font-display: swap;
   src: url("/fonts/Rinter.woff2") format("woff2");
   ascent-override: 90%;
-
-  /* Fontun altındaki boşluğu ayarla (deneme-yanılma gerekir) */
   descent-override: 20%;
-
-  /* Satırlar arası ekstra boşluğu sıfırla */
   line-gap-override: 0%;
 }
 body {
   font-family: alfa, sans-serif;
 }
+
+*/
