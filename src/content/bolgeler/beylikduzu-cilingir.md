@@ -4,6 +4,7 @@ shortTitle: "Beylikdüzü Çilingir"
 description: "Beylikdüzü çilingir hizmeti. Yakuplu, Kavaklı, Gürpınar ve Adnan Kahveci dahil tüm mahallelere 15 dakikada servis. Oto çilingir ve kilit değişimi için hemen arayın."
 publishDate: "2025-11-08"
 image: "/beylikduzu-cilingir.avif"
+imageAlt: "Beylikdüzü, Yakuplu ve Kavaklı Bölgesi Acil Çilingir Hizmeti"
 ---
 
 Beylikdüzü'nde kapıda mı kaldınız? Anahtarınızı kaybettiniz veya aracınızın kapısını mı açamıyorsunuz? Endişelenmeyin, yalnız değilsiniz. **Alfa Çilingir**, Beylikdüzü'nün en yoğun noktalarından en uzak köşelerine kadar **15 dakika** içerisinde ulaşarak sizi bu dertten kurtarıyor.

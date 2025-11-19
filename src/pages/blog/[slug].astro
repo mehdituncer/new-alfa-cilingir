@@ -44,7 +44,7 @@ const crumbs = [
         entry.data.image && (
           <Image
             src={entry.data.image}
-            alt={entry.data.title}
+            alt={entry.data.imageAlt || entry.data.title}
             width={1200}
             height={600}
             class="rounded-xl shadow-lg my-8"

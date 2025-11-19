@@ -8,6 +8,7 @@ const blogCollection = defineCollection({
     description: z.string(),
     publishDate: z.string(),
     image: z.string().optional(),
+    imageAlt: z.string().optional(),
   }),
 });
 
@@ -19,6 +20,7 @@ const hizmetlerCollection = defineCollection({
     description: z.string(),
     publishDate: z.string(),
     image: z.string().optional(),
+    imageAlt: z.string().optional(),
   }),
 });
 
@@ -30,6 +32,7 @@ const bolgelerCollection = defineCollection({
     description: z.string(),
     publishDate: z.string(),
     image: z.string().optional(),
+    imageAlt: z.string().optional(),
   }),
 });
 
