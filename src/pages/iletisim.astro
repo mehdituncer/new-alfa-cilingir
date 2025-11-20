@@ -4,6 +4,21 @@ import { Phone, Mail } from "@lucide/astro";
 ---
 
 <Layout title="İletişim - Alfa Çilingir">
+  <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "name": "İletişim - Alfa Çilingir",
+      "description": "7/24 Çilingir Hizmeti İletişim Bilgileri",
+      "mainEntity": {
+        "@type": "Locksmith",
+        "name": "Alfa Çilingir",
+        "telephone": "+905416247982",
+        "email": "iletisim@alfacilingir.com",
+        "areaServed": "İstanbul Avrupa Yakası"
+      }
+    }
+  </script>
   <div class="bg-white py-24">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-16">

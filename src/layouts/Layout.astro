@@ -20,8 +20,44 @@ const {
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@type": "Locksmith",
+        "name": "Alfa Çilingir",
+        "image": "https://alfacilingir.com/alfalogo.svg",
+        "description": "İstanbul Avrupa yakasında 7/24 profesyonel çilingir hizmeti.",
+        "telephone": "+905416247982",
+        "email": "iletisim@alfacilingir.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "İstanbul",
+          "addressCountry": "TR"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": "İstanbul Avrupa Yakası"
+        },
+        "priceRange": "₺₺",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "00:00",
+          "closes": "23:59"
+        }
+      }
+    </script>
   </head>
   <body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
     <header
