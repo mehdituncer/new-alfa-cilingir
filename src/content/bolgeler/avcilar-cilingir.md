@@ -69,4 +69,4 @@ Güvenliğiniz için Kale Kilit, Yale, Multilock, Yuma gibi sektörün öncü ve
 **5. Avcılar oto çilingir hizmetiniz var mı?**
 Evet, her marka ve model araç için hasarsız kapı açma ve anahtar kopyalama hizmetimiz mevcuttur.
 
-**Avcılar çilingir** ihtiyaçlarınızda, kaliteli hizmet, uygun fiyat ve güvenilir çözümler için Alfa Çilingir'i tercih edin. Bizi hemen arayın, kapıda kalma derdine son verelim!
+**Avcılar çilingir** ihtiyaçlarınızda, kaliteli hizmet, uygun fiyat ve güvenilir çözümler için Alfa Çilingir'i tercih edin. Bizi hemen arayın, kapıda kalma derdine son verelim.
