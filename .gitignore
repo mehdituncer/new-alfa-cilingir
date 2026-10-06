@@ -3,3 +3,5 @@ dist/
 .astro/
 .sites-runtime/
 .env
+dist-deploy/
+.wrangler/

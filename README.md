@@ -25,11 +25,11 @@ npm run preview
 
 ## Gerçek işletme bilgileri ve yayın
 
-Telefon/adres kullanıcı tarafından sağlanmıştır. No:35 ve işletme Google kaydı bağımsız doğrulanmamıştır. Google Maps bağlantısı adres aramasıdır; doğrulanmış yer kaydı iddiası taşımaz. Gerçek Google yorumları bulunmadığından sahte yorum, puan, Review veya AggregateRating eklenmemiştir. Instagram/Facebook hesapları sağlanmadığından bağlantıları uydurulmamıştır. WhatsApp aktiftir.
+Telefon kullanıcı tarafından sağlanmıştır. Daha önce yayımlanan açık adres hatalı olduğu bildirildiği için siteden, JSON-LD'den ve harita bağlantılarından kaldırılmıştır (Ekim 2026); doğrulanmış bir adres elde edilene kadar yeniden eklenmemelidir. Gerçek Google yorumları bulunmadığından sahte yorum, puan, Review veya AggregateRating eklenmemiştir. Instagram/Facebook hesapları sağlanmadığından bağlantıları uydurulmamıştır. WhatsApp aktiftir.
 
-15 dakika yakın bölgeler için bir varış hedefidir; trafik, konum ve ekip uygunluğu notuyla sunulur. Çevrim içi göstergesi belirlenen çalışma saatlerini gösterir, canlı operatör durumu değildir.
+10 dakika yakın bölgeler için bir varış hedefidir; trafik, konum ve ekip uygunluğu notuyla sunulur. Çevrim içi göstergesi belirlenen çalışma saatlerini gösterir, canlı operatör durumu değildir.
 
-`astro.config.mjs` içindeki `site` önizleme yayın adresidir. Alfaçilingir.com için alan adı/DNS bağlantısı ayrıca yapılmalı; bağlandıktan sonra `site` gerçek kanonik alan adıyla güncellenip yeniden derlenmelidir. Sitemap, canonical ve JSON-LD bundan türetilir. Güncel yayın adresi: https://alfa-cilingir.gptuser1212.chatgpt.site
+Yayın: Cloudflare Workers (statik varlıklar). `npx wrangler login` bir kez, sonra `npm run deploy` derler ve yükler. Yapılandırma `wrangler.jsonc` içindedir; alfacilingir.com ve www alt alanı özel alan adı olarak bağlıdır, `site` değeri `astro.config.mjs` içinde https://alfacilingir.com olarak ayarlıdır (canonical, sitemap ve JSON-LD buradan türer). Başlıklar ve önbellek: `public/_headers`. Önizleme adresi: https://alfa-cilingir.alfacilingir.workers.dev (noindex).
 
 FAQPage işaretlemesi Google'da zengin sonuç gösterileceğini garanti etmez. Fotoğraf stok ve temsilidir, gerçek işletme personeli iddiası içermez.
 

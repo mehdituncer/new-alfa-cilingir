@@ -1,8 +1,6 @@
 export const business = {
  name: 'Alfa Çilingir', phone: '0541 608 37 71', tel: 'tel:+905416083771',
  whatsapp: 'https://wa.me/905416083771?text=Merhaba%2C%20%C3%A7ilingir%20hizmeti%20almak%20istiyorum.',
- address: 'Büyükşehir Mahallesi, Cumhuriyet Caddesi, Derya Sokak No: 35, Beylikdüzü / İstanbul',
- maps: 'https://www.google.com/maps/search/?api=1&query=Alfa%20%C3%87ilingir%20B%C3%BCy%C3%BCk%C5%9Fehir%20Cumhuriyet%20Caddesi%20Derya%20Sokak%2035%20Beylikd%C3%BCz%C3%BC',
 };
 export const services = [
  {slug:'kapi-acma',title:'Kapı açma',icon:'door',summary:'Anahtar içeride kaldıysa, kapınız güvenli ellerde.',tag:'EV & İŞ YERİ'},
@@ -20,7 +18,7 @@ export const regions = [
  {slug:'bahcesehir-cilingir',name:'Bahçeşehir',area:'Başakşehir',neighborhoods:['Bahçeşehir 1. Kısım','Bahçeşehir 2. Kısım']},
 ];
 export const faq = [
- {q:'Gerçekten 15 dakikada geliyor musunuz?',a:'Yakın hizmet noktalarında 15 dakikada ulaşmayı hedefliyoruz. Bulunduğunuz mahalle, trafik ve ekip uygunluğuna göre süre değişebilir. Telefon görüşmesinde size tahmini varış süresini bildiririz.'},
+ {q:'Gerçekten 10 dakikada geliyor musunuz?',a:'Yakın hizmet noktalarında 10 dakikada ulaşmayı hedefliyoruz. Bulunduğunuz mahalle, trafik ve ekip uygunluğuna göre süre değişebilir. Telefon görüşmesinde size tahmini varış süresini bildiririz.'},
  {q:'Kapım zarar görmeden açılabilir mi?',a:'Uygulanacak yöntem kapının, kilidin ve arızanın durumuna bağlıdır. Öncelik kapı ve kilidi korumaktır; işlem öncesi olası müdahale ve değişim ihtiyacı açıklanır.'},
  {q:'Çilingir ücretini nasıl öğrenebilirim?',a:'Ücret; hizmet türü, kilit modeli, konum ve gerekli parçalara göre belirlenir. Bizi arayıp durumu anlatın veya WhatsApp üzerinden kilit fotoğrafı gönderin. İşlem başlamadan önce kapsam ve ücret üzerinde anlaşılır.'},
  {q:'Hangi saatlerde iletişime geçebilirim?',a:'Telefon ve WhatsApp iletişim saatlerimiz Türkiye saatiyle her gün 07.00–00.00 arasındadır. Bu saatlerin dışında gönderilen mesajlara çalışma saatlerinde dönüş yapılır.'},
