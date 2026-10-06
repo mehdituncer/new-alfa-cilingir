@@ -1,0 +1,60 @@
+{
+  "tool": "image_gen__imagegen",
+  "date": "2026-09-22",
+  "assets": [
+    {
+      "name": "kapi-acma",
+      "prompt": "Use case: photorealistic-natural\nAsset type: landscape website service card photo for a Turkish locksmith business\nStyle/medium: photorealistic premium editorial product and architecture photography, natural daylight, crisp realistic metal and wood textures.\nComposition/framing: wide 3:2 horizontal landscape, main subject in the crop-safe middle.\nColor palette: charcoal, white, subtle royal blue details.\nConstraints: no text, logos, watermarks, UI, illustrations, visible brands, manipulation of locks, bypass activities, tools, procedural instructions.\nPrimary request: Welcoming modern Turkish apartment entry. A charcoal front door is slightly ajar with a brushed silver handle. Ordinary house keys rest on a royal blue key tray in the foreground, bright natural daylight. No people.",
+      "path": "public/images/services/kapi-acma.webp",
+      "mode": "built-in image_gen",
+      "generation_count": 1,
+      "visual_qa": "Passed: distinct relevant subject; natural photography; 3:2 landscape; no text/logo/watermark or procedural activity.",
+      "responsive_path": "public/images/services/kapi-acma-640.webp"
+    },
+    {
+      "name": "oto-cilingir",
+      "prompt": "Use case: photorealistic-natural\nAsset type: landscape website service card photo for a Turkish locksmith business\nStyle/medium: photorealistic premium editorial product and architecture photography, natural daylight, crisp realistic metal and wood textures.\nComposition/framing: wide 3:2 horizontal landscape, main subject in the crop-safe middle.\nColor palette: charcoal, white, subtle royal blue details.\nConstraints: no text, logos, watermarks, UI, illustrations, visible brands, manipulation of locks, bypass activities, tools, procedural instructions.\nPrimary request: A dark blue modern unbranded car parked in a clean urban residential driveway. Focus on its side door handle. At the lower edge, the owner's hand naturally holds a car key fob. This is an ordinary ownership lifestyle scene, no work being done on the car or lock.",
+      "path": "public/images/services/oto-cilingir.webp",
+      "mode": "built-in image_gen",
+      "generation_count": 1,
+      "visual_qa": "Passed: distinct relevant subject; natural photography; 3:2 landscape; no text/logo/watermark or procedural activity.",
+      "responsive_path": "public/images/services/oto-cilingir-640.webp"
+    },
+    {
+      "name": "kasa-acma",
+      "prompt": "Use case: photorealistic-natural\nAsset type: landscape website service card photo for a Turkish locksmith business\nStyle/medium: photorealistic premium editorial product and architecture photography, natural daylight, crisp realistic metal and wood textures.\nComposition/framing: wide 3:2 horizontal landscape, main subject in the crop-safe middle.\nColor palette: charcoal, white, subtle royal blue details.\nConstraints: no text, logos, watermarks, UI, illustrations, visible brands, manipulation of locks, bypass activities, tools, procedural instructions.\nPrimary request: Premium closed charcoal household safe with a silver dial and handle on a shelf in a bright minimalist office, a royal blue folder on the adjacent shelf. No people.",
+      "path": "public/images/services/kasa-acma.webp",
+      "mode": "built-in image_gen",
+      "generation_count": 1,
+      "visual_qa": "Passed: distinct relevant subject; natural photography; 3:2 landscape; no text/logo/watermark or procedural activity.",
+      "responsive_path": "public/images/services/kasa-acma-640.webp"
+    },
+    {
+      "name": "kilit-degisimi",
+      "prompt": "Use case: photorealistic-natural\nAsset type: landscape website service card photo for a Turkish locksmith business\nStyle/medium: photorealistic premium editorial product and architecture photography, natural daylight, crisp realistic metal and wood textures.\nComposition/framing: wide 3:2 horizontal landscape, main subject in the crop-safe middle.\nColor palette: charcoal, white, subtle royal blue details.\nConstraints: no text, logos, watermarks, UI, illustrations, visible brands, manipulation of locks, bypass activities, tools, procedural instructions.\nPrimary request: Two new polished euro-cylinder door locks and ordinary keys laid neatly on a light gray workbench with a subtle royal blue mat. Clean commercial product still-life photo. No people, no tools, no assembly instructions.",
+      "path": "public/images/services/kilit-degisimi.webp",
+      "mode": "built-in image_gen",
+      "generation_count": 1,
+      "visual_qa": "Passed: distinct relevant subject; natural photography; 3:2 landscape; no text/logo/watermark or procedural activity.",
+      "responsive_path": "public/images/services/kilit-degisimi-640.webp"
+    },
+    {
+      "name": "kirik-anahtar-cikarma",
+      "prompt": "Use case: photorealistic-natural\nAsset type: landscape website service card photo for a Turkish locksmith business\nStyle/medium: photorealistic premium editorial product and architecture photography, natural daylight, crisp realistic metal and wood textures.\nComposition/framing: wide 3:2 horizontal landscape, main subject in the crop-safe middle.\nColor palette: charcoal, white, subtle royal blue details.\nConstraints: no text, logos, watermarks, UI, illustrations, visible brands, manipulation of locks, bypass activities, tools, procedural instructions.\nPrimary request: Closeup commercial product still-life photograph of an ordinary brass house key broken into two separate pieces next to an intact spare house key on a light neutral surface, with a small royal blue keyring. No people, no tools, no procedure.",
+      "path": "public/images/services/kirik-anahtar-cikarma.webp",
+      "mode": "built-in image_gen",
+      "generation_count": 1,
+      "visual_qa": "Passed: distinct relevant subject; natural photography; 3:2 landscape; no text/logo/watermark or procedural activity.",
+      "responsive_path": "public/images/services/kirik-anahtar-cikarma-640.webp"
+    },
+    {
+      "name": "celik-kapi-kilit-tamiri",
+      "prompt": "Use case: photorealistic-natural\nAsset type: landscape website service card photo for a Turkish locksmith business\nStyle/medium: photorealistic premium editorial product and architecture photography, natural daylight, crisp realistic metal and wood textures.\nComposition/framing: wide 3:2 horizontal landscape, main subject in the crop-safe middle.\nColor palette: charcoal, white, subtle royal blue details.\nConstraints: no text, logos, watermarks, UI, illustrations, visible brands, manipulation of locks, bypass activities, tools, procedural instructions.\nPrimary request: Closeup architectural photograph of a charcoal steel apartment entrance door with a brushed silver lever handle and a visible lock cylinder. Warm softly blurred entryway in background, natural daylight. No people or tools.",
+      "path": "public/images/services/celik-kapi-kilit-tamiri.webp",
+      "mode": "built-in image_gen",
+      "generation_count": 1,
+      "visual_qa": "Passed: distinct relevant subject; natural photography; 3:2 landscape; no text/logo/watermark or procedural activity.",
+      "responsive_path": "public/images/services/celik-kapi-kilit-tamiri-640.webp"
+    }
+  ]
+}

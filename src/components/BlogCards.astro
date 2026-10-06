@@ -1,0 +1,8 @@
+---
+import Icon from './Icon.astro';import editorial from '../data/editorial.json';
+import {serviceImages,postImageKeys} from '../data/images';
+---
+<div class="blog-grid">{editorial.posts.map(post=>{
+ const image=serviceImages[postImageKeys[post.slug]];
+ return <a class="blog-card" href={'/blog/'+post.slug+'/'}><div class="blog-cover photo-cover"><img src={image.src} srcset={`${image.small} 640w, ${image.src} 1280w`} sizes="(max-width:520px) 100vw, 33vw" alt={image.alt} width="1280" height="853" loading="lazy" decoding="async"/></div><div class="blog-content"><div class="blog-meta"><span>{post.category}</span><span>{post.readTime}</span></div><h3>{post.title}</h3><p>{post.description}</p><span class="text-link">Yazıyı okuyun<Icon name="right" size={16}/></span></div></a>;
+})}</div>

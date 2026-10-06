@@ -1,6 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" version="1.2" viewBox="0 0 500 500">
-  <!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
-  <rect x="0" y="0" width="500" height="500" rx="80" ry="80" fill="#fffdfe"/>
-  <path d="M375.71,348.14l-57.56-95.87c9.13-15.81,27.67-42.83,60.51-64.54,20.98-13.87,41.04-21.06,55.7-25.01-86.89-46.21-146.46,66.04-192.24,113.69-49.66,47.36-138.77,25.37-117.14-33.35,15.59-46.64,95.01-56.56,123.11-22.71l23-32.41c-55.41-55.19-137.91-43.69-186.99,26.95-81.57,131.73,129.7,179.78,204.3,74.5,20.48,22.59,3.81,17.99,7.5,24.14,6.94,11.56,13.89,23.11,20.83,34.67,19.67-.02,39.33-.05,59-.07Z" fill="#1447e6" stroke="#1447e6" stroke-miterlimit="10" stroke-width="1.75"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="9" fill="#2563eb"/><g fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="20" cy="11" r="5"/><path d="m16.5 14.5-9 9H5v-3l3-3h3v-3h3"/></g></svg>

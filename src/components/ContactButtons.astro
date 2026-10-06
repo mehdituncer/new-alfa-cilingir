@@ -1,0 +1,9 @@
+---
+import Icon from './Icon.astro';
+import {business} from '../data/site';
+const {status = false, dark = false} = Astro.props;
+---
+<div class:list={['contact-block',{dark}]}>
+ {status && <p class="availability" data-availability role="status"><span class="status-dot"></span><span data-status-text>İletişim saatleri: 07.00–00.00</span></p>}
+ <div class="contact-buttons"><a class="button primary" href={business.tel}><Icon name="phone" size={19}/><span class="button-label">Şimdi ara</span><Icon name="arrow" size={17}/></a><a class="button whatsapp" href={business.whatsapp} target="_blank" rel="noopener noreferrer"><Icon name="chat" size={20}/><span class="button-label">WhatsApp</span><Icon name="arrow" size={17}/></a></div>
+</div>

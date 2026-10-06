@@ -1,43 +1,58 @@
-# Astro Starter Kit: Minimal
+# Alfa Çilingir
+
+Astro 5 + Tailwind CSS 4 ile statik, Türkçe ve mobil uyumlu çilingir sitesi. Shadcn tasarım dilinde yerel Astro bileşenleri; React gerektirmez.
+
+## Çalıştırma
 
 ```sh
-npm create astro@latest -- --template minimal
+npm install
+npm run dev
+npm run build
+npm run preview
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## İçerik
 
-## 🚀 Project Structure
+- Ana sayfa, hizmetler listesi ve 6 hizmet yazısı
+- Bölgeler listesi ve 5 bölge yazısı; 89 mahalle adı
+- Blog listesi ve 3 bilgilendirici yazı
+- İletişim, gizlilik ve 404 sayfaları
+- LocalBusiness alt türü Locksmith, WebSite, WebPage, Service, Article, FAQPage, BreadcrumbList ve ItemList JSON-LD
+- Sitemap, robots.txt, canonical ve Open Graph metadata
+- Europe/Istanbul saat dilimiyle 07.00 dahil, 00.00 hariç çevrim içi göstergesi
 
-Inside of your Astro project, you'll see the following folders and files:
+İşletme bilgileri: `src/data/site.ts`. Hizmet ve blog metinleri: `src/data/editorial.json`. Bölge yazıları: `src/data/region-content.ts`.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+## Gerçek işletme bilgileri ve yayın
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+Telefon/adres kullanıcı tarafından sağlanmıştır. No:35 ve işletme Google kaydı bağımsız doğrulanmamıştır. Google Maps bağlantısı adres aramasıdır; doğrulanmış yer kaydı iddiası taşımaz. Gerçek Google yorumları bulunmadığından sahte yorum, puan, Review veya AggregateRating eklenmemiştir. Instagram/Facebook hesapları sağlanmadığından bağlantıları uydurulmamıştır. WhatsApp aktiftir.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+15 dakika yakın bölgeler için bir varış hedefidir; trafik, konum ve ekip uygunluğu notuyla sunulur. Çevrim içi göstergesi belirlenen çalışma saatlerini gösterir, canlı operatör durumu değildir.
 
-Any static assets, like images, can be placed in the `public/` directory.
+`astro.config.mjs` içindeki `site` önizleme yayın adresidir. Alfaçilingir.com için alan adı/DNS bağlantısı ayrıca yapılmalı; bağlandıktan sonra `site` gerçek kanonik alan adıyla güncellenip yeniden derlenmelidir. Sitemap, canonical ve JSON-LD bundan türetilir. Güncel yayın adresi: https://alfa-cilingir.gptuser1212.chatgpt.site
 
-## 🧞 Commands
+FAQPage işaretlemesi Google'da zengin sonuç gösterileceğini garanti etmez. Fotoğraf stok ve temsilidir, gerçek işletme personeli iddiası içermez.
 
-All commands are run from the root of the project, from a terminal:
+## Görsel kaynağı
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Hero: Pixabay / locksmith security door lock, 1280×935.
+Kaynak: https://pixabay.com/photos/locksmith-security-door-lock-8559026/
+Lisans: https://pixabay.com/service/license-summary/
+Yerel dosya: `public/images/locksmith-hero.jpg`.
 
-## 👀 Want to learn more?
+## Mahalle kaynakları
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- https://beylikduzu.istanbul/icerik/harita-paylasim-platformu
+- https://esenyurt.istanbul/muhtarliklar
+- https://www.bcekmece.bel.tr/buyukcekmece/muhtarliklar
+- https://www.bcekmece.bel.tr/buyukcekmece/muhtarliklar?page=2
+- https://www.avcilar.bel.tr/mahalleler
+- https://www.basaksehir.bel.tr/muhtarliklar
+
+Bahçeşehir ayrı ilçe değil, Başakşehir'e bağlı 1. Kısım ve 2. Kısım mahallelerini kapsayan hizmet bölgesidir.
+
+## Eylül 2026 görsel ve mobil güncellemesi
+
+Marka Alfa Çilingir olarak düzeltildi. Telefon ve WhatsApp etiketleri tek satırda; mobil güven alanları ortalı. Hizmet kartları, blog kartları ve tüm hizmet/bölge/blog yazılarının başlangıcında temsili görseller bulunur.
+
+Altı görsel yerleşik ImageGen aracıyla üretilmiştir. WebP dosyaları `public/images/services/` klasöründe, 640 ve 1280 piksel genişliğinde sunulur. Üretim promptları `docs/generated-image-prompts.json` dosyasındadır. Görseller gerçek işletme personeli, mekânı veya hizmet müdahalesinin belgesi olarak sunulmaz.

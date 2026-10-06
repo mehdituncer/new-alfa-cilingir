@@ -1,0 +1,6 @@
+---
+import {serviceImages} from '../data/images';
+const {imageKey}=Astro.props;
+const image=serviceImages[imageKey];
+---
+<figure class="article-cover"><img src={image.src} srcset={`${image.small} 640w, ${image.src} 1280w`} sizes="(max-width:800px) calc(100vw - 36px), 760px" alt={image.alt} width="1280" height="853" fetchpriority="high"/><figcaption>Temsili görsel</figcaption></figure>

@@ -1,0 +1,6 @@
+---
+import Icon from './Icon.astro';
+import ContactButtons from './ContactButtons.astro';
+import {services} from '../data/site';
+---
+<aside class="article-aside"><div class="aside-contact"><Icon name="phone" size={27}/><h2>Yardıma mı ihtiyacınız var?</h2><p>Durumu anlatın, tahmini varış süresini ve hizmet detaylarını birlikte netleştirelim.</p><ContactButtons status/></div><div class="aside-related"><h3>Hizmetlerimize göz atın</h3>{services.map(s=><a href={'/hizmetler/'+s.slug+'/'}>{s.title}<Icon name="chevron" size={14}/></a>)}</div></aside>

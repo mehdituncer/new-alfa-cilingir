@@ -1,0 +1,10 @@
+---
+import Icon from './Icon.astro';
+import {serviceImages} from '../data/images';
+const {service,featured=false,compact=false}=Astro.props;
+const image=serviceImages[service.slug];
+---
+<a href={'/hizmetler/'+service.slug+'/'} class:list={['service-card','media-card',{featured,compact}]}>
+ <div class="service-image"><img src={image.src} srcset={`${image.small} 640w, ${image.src} 1280w`} sizes="(max-width:520px) 100vw, (max-width:800px) 50vw, 33vw" width="1280" height="853" alt={image.alt} loading="lazy" decoding="async"/><span class="card-image-icon"><Icon name={service.icon} size={21}/></span></div>
+ <div class="service-copy">{featured&&<div class="service-tag">EV & İŞ YERİ</div>}<div class="service-title-line"><h3>{service.title}</h3><Icon name="arrow" size={19}/></div><p>{service.summary}</p>{featured&&<span class="featured-link">Hizmeti inceleyin<Icon name="right" size={17}/></span>}</div>
+</a>
