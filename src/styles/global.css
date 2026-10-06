@@ -46,10 +46,13 @@ a,button{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
 img{max-width:100%;display:block}
 svg{flex-shrink:0}
 ::selection{background:#dbeafe}
-:focus-visible{outline:3px solid #60a5fa;outline-offset:3px}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.cta-box :focus-visible{outline-color:#fff}
+.footer :focus-visible{outline-color:#93c5fd}
 h1,h2,h3,p,ul,figure{margin:0}
-h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.2}
-.container{width:min(var(--container),calc(100% - 2 * var(--gutter)));margin-inline:auto}
+h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.2;text-wrap:balance}
+.hero-lead,.service-copy p,.cta-box p,.review-empty p,.reviews-panel p,.regions-wrap>div>p,.faq-layout>div>p,.section-heading p,.faq-list summary,.availability,.region-note{text-wrap:balance}
+.container{width:min(var(--container),calc(100% - 2 * var(--gutter)));max-width:none;margin-inline:auto}
 .skip-link{position:absolute;left:12px;top:-120px;z-index:100;background:#fff;padding:12px 16px;border-radius:10px;font-weight:700;box-shadow:0 8px 24px rgba(0,0,0,.18)}
 .skip-link:focus{top:12px}
 
@@ -61,9 +64,9 @@ h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.2}
 
 .desktop-nav{display:flex;align-items:center;gap:4px}
 .desktop-nav a{position:relative;padding:10px 14px;font-size:16px;font-weight:650;color:#4b5563;transition:color var(--tr)}
-.desktop-nav a::after{content:'';position:absolute;left:14px;right:14px;bottom:2px;height:2px;border-radius:2px;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform var(--tr)}
+.desktop-nav a::after{content:'';position:absolute;left:14px;right:14px;bottom:2px;height:2px;border-radius:2px;background:var(--blue);clip-path:inset(0 100% 0 0);transition:clip-path var(--tr)}
 .desktop-nav a.active{color:var(--blue)}
-.desktop-nav a.active::after{transform:scaleX(1)}
+.desktop-nav a.active::after{clip-path:inset(0)}
 
 .header-actions{display:flex;align-items:center;gap:12px}
 .header-phone{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 20px;border:1.5px solid var(--line);border-radius:14px;font-size:16px;font-weight:750;white-space:nowrap;transition:transform var(--tr),border-color var(--tr),background-color var(--tr),color var(--tr)}
@@ -75,7 +78,7 @@ h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.2}
 .mobile-nav:not([hidden]){animation:drop .3s var(--ease)}
 .mobile-nav a{display:flex;align-items:center;justify-content:space-between;padding:15px 4px;font-size:18px;font-weight:650;border-bottom:1px solid var(--line);transition:color var(--tr)}
 .mobile-nav a:last-child{border-bottom:0}
-.mobile-nav a.active{color:var(--blue)}
+.mobile-nav a.active{color:var(--blue);background:var(--blue-soft);margin-inline:-8px;padding-inline:12px;border-radius:12px;border-bottom-color:transparent}
 .mobile-nav a svg{transition:transform var(--tr)}
 
 .footer{background:var(--ink);color:#cbd5e1;padding-top:clamp(48px,6vw,72px)}
@@ -86,8 +89,7 @@ h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.2}
 .footer h3{margin-bottom:14px;font-size:18px;letter-spacing:-.01em;color:#fff}
 .footer-col a,.footer-social{display:flex;align-items:center;gap:8px;padding:6px 0;font-size:16px;color:#cbd5e1;transition:color var(--tr),transform var(--tr)}
 .footer-social{margin-top:6px}
-.footer-address{font-size:16px;line-height:1.7;color:#cbd5e1}
-.footer-hours{margin-block:10px;font-size:16px;color:#cbd5e1}
+.footer-hours{margin:0;padding:6px 0;font-size:16px;color:#cbd5e1}
 .footer-bottom{display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;padding-block:22px 30px;border-top:1px solid #374253;font-size:16px;color:#a3afc0}
 
 .fixed-contact{position:fixed;right:24px;bottom:24px;z-index:50;display:flex;gap:8px;padding:8px;background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:18px;box-shadow:0 14px 40px rgba(15,23,42,.2);backdrop-filter:blur(8px)}
@@ -131,7 +133,7 @@ h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.2}
 .hero-copy{display:flex;flex-direction:column;align-items:flex-start}
 .hero h1{font-size:clamp(40px,5vw,62px);line-height:1.08;letter-spacing:-.04em}
 .hero h1 span{display:block;color:var(--blue)}
-.hero-lead{max-width:30ch;margin-top:22px;font-size:clamp(18px,1.5vw,21px);line-height:1.6;color:var(--muted)}
+.hero-lead{max-width:36ch;margin-top:22px;font-size:clamp(18px,1.5vw,21px);line-height:1.6;color:var(--muted)}
 .hero .contact-block{margin-top:34px}
 .hero-visual{position:relative;aspect-ratio:6 / 5;overflow:hidden;border-radius:var(--radius-lg);background:#dce5ed;box-shadow:0 32px 60px -24px rgba(16,42,90,.4)}
 .hero-visual img{width:100%;height:100%;object-fit:cover;object-position:60% 50%}
@@ -143,11 +145,14 @@ h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.2}
 /* 6. Sections & cards ------------------------------------------------------ */
 .section{padding-block:var(--section-space)}
 .section.flush-top{padding-top:0}
+.section.flush-top + .section{padding-top:0}
 .section-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-bottom:clamp(28px,3vw,44px)}
 .section-heading h2,.regions-wrap h2,.faq-layout h2{margin-top:12px;font-size:clamp(28px,3.4vw,42px)}
 .section-heading p{margin-top:12px;font-size:18px;color:var(--muted)}
 
 .services-grid,.index-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+@media(min-width:601px){.services-grid{grid-auto-rows:1fr}}
+@media(min-width:961px) and (max-width:1180px){.service-title-line h3{font-size:clamp(18px,1.75vw,21px)}}
 .service-card{display:flex;flex-direction:column;overflow:hidden;border:1px solid var(--line);border-radius:var(--radius);background:#fff;transition:transform var(--tr),box-shadow var(--tr),border-color var(--tr)}
 .service-image{position:relative;aspect-ratio:3 / 2;overflow:hidden;background:#e8edf3}
 .service-image img,.blog-cover img,.article-cover img{width:100%;height:100%;object-fit:cover}
@@ -193,10 +198,10 @@ h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.2}
 
 .bottom-cta{padding-bottom:var(--section-space)}
 .cta-box{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:space-between;gap:32px;padding:clamp(28px,4vw,52px);border-radius:var(--radius-lg);background:linear-gradient(135deg,#2563eb 0%,#1d4ed8 100%);color:#fff}
-.cta-box::before{content:'';position:absolute;right:-90px;top:-110px;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,.08)}
+.cta-box::before{content:'';position:absolute;right:-90px;top:-110px;width:320px;height:320px;border-radius:50%;background:rgba(255,255,255,.06)}
 .cta-box>*{position:relative}
 .cta-box h2{color:#fff;font-size:clamp(26px,3vw,36px)}
-.cta-box p{margin-top:10px;font-size:18px;color:#dbeafe}
+.cta-box p{margin-top:10px;font-size:18px;color:#fff}
 
 /* 8. Blog ------------------------------------------------------------------ */
 .blog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
@@ -207,7 +212,7 @@ h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.2}
 .blog-meta span:first-child{font-weight:700;color:var(--blue)}
 .blog-content h3{font-size:21px;line-height:1.35;letter-spacing:-.02em;transition:color var(--tr)}
 .blog-content p{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden;margin-top:12px;font-size:17px;line-height:1.65;color:var(--muted)}
-.blog-content .text-link{margin-top:auto;padding-top:20px}
+.blog-content .text-link{align-self:flex-start;margin-top:auto;padding-top:20px}
 
 /* 9. Inner pages ----------------------------------------------------------- */
 .page-intro{max-width:800px;padding-block:clamp(28px,4vw,48px) clamp(24px,3vw,36px)}
@@ -261,7 +266,7 @@ h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.2}
 .contact-item>svg{box-sizing:content-box;padding:10px;border-radius:12px;background:var(--blue-soft);color:var(--blue);align-self:flex-start}
 .contact-item h3{margin-bottom:4px;font-size:18px;letter-spacing:-.01em}
 .contact-item p,.contact-item a{font-size:17px;color:var(--muted)}
-.contact-item a{transition:color var(--tr)}
+.contact-item a{color:var(--blue);font-weight:750;transition:color var(--tr)}
 .contact-item .text-link{margin-top:8px;font-size:16px;color:var(--blue)}
 .contact-info .contact-block{margin-top:8px}
 .contact-info .neighborhoods{margin-bottom:0}
@@ -297,8 +302,8 @@ h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.2}
 }
 /* Reduced motion: no movement and nothing that loops; entrance and reveal become a plain fade. */
 @media(prefers-reduced-motion:reduce){
-  .hero-copy>*,.page-intro,.js [data-reveal].in{animation-name:fade}
-  .hero-visual,.fixed-call,.online .status-dot,.mobile-nav:not([hidden]),.faq-list details p{animation:none}
+  .hero-copy>*,.page-intro,.js [data-reveal].in,.mobile-nav:not([hidden]),.faq-list details p{animation-name:fade}
+  .hero-visual,.fixed-call,.online .status-dot{animation:none}
 }
 
 /* 11. Hover feedback ------------------------------------------------------- */
@@ -308,7 +313,7 @@ h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.2}
   /* header */
   .brand:hover .brand-logo{opacity:.8}
   .desktop-nav a:hover{color:var(--blue)}
-  .desktop-nav a:hover::after{transform:scaleX(1)}
+  .desktop-nav a:hover::after{clip-path:inset(0)}
   .header-phone:hover{transform:translateY(-1px);border-color:var(--blue);background:var(--blue-soft)}
   .menu-toggle:hover{border-color:var(--blue);background:var(--blue-soft);color:var(--blue)}
   .mobile-nav a:hover{color:var(--blue)}
@@ -356,13 +361,15 @@ h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.2}
   .neighborhoods a:hover span{border-color:var(--blue-line);background:#e3edff;color:var(--blue-dark)}
   .aside-related a:hover{color:var(--blue)}
   .aside-related a:hover svg{transform:translateX(3px)}
-  .contact-item a:hover{color:var(--blue)}
+  .contact-item a:hover{color:var(--blue-dark)}
 }
 
 /* 12. Responsive ----------------------------------------------------------- */
 @media(max-width:1080px){
+  html{scroll-padding-bottom:104px}
   .desktop-nav{display:none}
   .menu-toggle{display:grid}
+  .footer-bottom{padding-bottom:104px}
 }
 @media(min-width:1081px){
   .mobile-nav{display:none!important}
@@ -396,7 +403,6 @@ h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.2}
   .section-heading{align-items:flex-start;flex-direction:column;gap:18px}
   .fixed-contact{left:14px;right:14px;bottom:14px;padding:6px;border-radius:16px}
   .fixed-contact a{flex:1;padding:0 12px}
-  .footer-bottom{padding-bottom:104px}
 }
 @media(hover:hover) and (max-width:760px){
   /* the phone button is solid blue here, so keep it blue on hover (the generic hover turns it pale) */
@@ -421,4 +427,36 @@ h1,h2,h3{font-weight:800;letter-spacing:-.03em;line-height:1.2}
 @media(max-width:380px){
   .contact-buttons{grid-template-columns:minmax(0,1fr)}
   .fixed-contact a{gap:6px;padding:0 8px}
+}
+
+/* 13. Refinements ---------------------------------------------------------- */
+@media(max-width:400px){
+  .hero h1{font-size:min(40px,calc((100vw - 36px) / 8.8))}
+  .page-intro h1{font-size:clamp(28px,calc((100vw - 36px) / 9.9),34px)}
+}
+@media(max-width:380px){
+  .region-row{gap:12px;padding:14px}
+  .region-num{width:38px;height:38px}
+}
+@media(max-width:600px){
+  .reviews-panel,.review-empty{padding:20px}
+}
+/* region index: 3 + 2 cards fill the row on desktop, the odd last card spans the row on tablets */
+@media(min-width:961px){
+  .region-grid{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .region-grid>*{grid-column:span 2}
+  .region-grid>:nth-child(n+4){grid-column:span 3}
+}
+@media(min-width:601px) and (max-width:960px){
+  .region-grid>:last-child:nth-child(odd){grid-column:1 / -1}
+}
+/* pressed feedback on touch, bigger tap areas */
+.mobile-nav a:active,.faq-list summary:active,.aside-related a:active{color:var(--blue)}
+.menu-toggle:active{border-color:var(--blue);background:var(--blue-soft);color:var(--blue)}
+.service-card:active,.blog-card:active,.region-index-card:active,.region-row:active{border-color:var(--blue-line)}
+@media(hover:hover){.button:hover:active{transform:translateY(1px)}}
+@media(pointer:coarse){
+  a.text-link{position:relative}
+  a.text-link::before{content:"";position:absolute;inset:-10px -6px}
+  .footer-col a,.footer-social{padding-block:9px}
 }

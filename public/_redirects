@@ -1,0 +1,9 @@
+# old alfacilingir.com page addresses -> new pages (keeps search rankings and bookmarks working)
+/index.html /  301
+/hizmetler/kapi-acma.html /hizmetler/kapi-acma/ 301
+/hizmetler/celik-kapi-acma.html /hizmetler/kapi-acma/ 301
+/hizmetler/kasa-acma.html /hizmetler/kasa-acma/ 301
+/hizmetler/kilit-degistirme.html /hizmetler/kilit-degisimi/ 301
+/hizmetler/elektronik-kilitler.html /hizmetler/kilit-degisimi/ 301
+/hizmetler/oto-cilingir.html /hizmetler/oto-cilingir/ 301
+/hizmetler/anahtar-kopyalama.html /hizmetler/ 301
