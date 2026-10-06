@@ -1,11 +1,11 @@
-export const serviceImages: Record<string,{src:string;small:string;alt:string}> = Object.fromEntries([
+export const serviceImages: Record<string,{src:string;small:string;srcset:string;alt:string}> = Object.fromEntries([
  ['kapi-acma','Aralık duran modern daire kapısı ve mavi anahtarlık tepsisindeki ev anahtarları'],
  ['oto-cilingir','Mavi bir aracın kapısı ve sahibinin elindeki otomobil anahtarı'],
  ['kasa-acma','Aydınlık bir ofiste kapalı çelik kasa'],
  ['kilit-degisimi','Yeni kapı kilidi silindirleri ve yedek anahtarlar'],
  ['kirik-anahtar-cikarma','İki parçaya ayrılmış ev anahtarı ve sağlam yedek anahtar'],
  ['celik-kapi-kilit-tamiri','Çelik daire kapısının metal kolu ve kilit silindiri'],
-].map(([slug,alt])=>[slug,{src:`/images/services/${slug}.webp`,small:`/images/services/${slug}-640.webp`,alt:alt+'; temsili görsel'}]));
+].map(([slug,alt])=>[slug,{src:`/images/services/${slug}.webp`,small:`/images/services/${slug}-640.webp`,srcset:`/images/services/${slug}-480.webp 480w, /images/services/${slug}-640.webp 640w, /images/services/${slug}-960.webp 960w, /images/services/${slug}.webp 1280w`,alt:alt+'; temsili görsel'}]));
 export const postImageKeys: Record<string,string> = {
  'kapida-kalinca-ne-yapmali':'kapi-acma',
  'anahtar-kilitte-kirildi':'kirik-anahtar-cikarma',

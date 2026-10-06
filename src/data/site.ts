@@ -1,6 +1,6 @@
 export const business = {
- name: 'Alfa Çilingir', phone: '0541 608 37 71', tel: 'tel:+905416083771',
- whatsapp: 'https://wa.me/905416083771?text=Merhaba%2C%20%C3%A7ilingir%20hizmeti%20almak%20istiyorum.',
+ name: 'Alfa Çilingir', phone: '0541 624 79 82', tel: 'tel:+905416247982',
+ whatsapp: 'https://wa.me/905416247982?text=Merhaba%2C%20%C3%A7ilingir%20hizmeti%20almak%20istiyorum.',
 };
 export const services = [
  {slug:'kapi-acma',title:'Kapı açma',icon:'door',summary:'Anahtar içeride kaldıysa, kapınız güvenli ellerde.',tag:'EV & İŞ YERİ'},
@@ -18,6 +18,8 @@ export const regions = [
  {slug:'bahcesehir-cilingir',name:'Bahçeşehir',area:'Başakşehir',neighborhoods:['Bahçeşehir 1. Kısım','Bahçeşehir 2. Kısım']},
 ];
 export const faq = [
+ {q:'Hangi bölgelere hizmet veriyorsunuz?',a:'Beylikdüzü, Esenyurt, Büyükçekmece, Avcılar ve Bahçeşehir’de hizmet veriyoruz. Mahalle ve açık adresinizi paylaşarak ekip uygunluğunu ve tahmini varış süresini öğrenebilirsiniz.'},
+ {q:'Hangi çilingir hizmetlerini veriyorsunuz?',a:'Kapı açma, oto çilingir, kasa açma, kilit değişimi, kırık anahtar çıkarma ve çelik kapı kilit tamiri hizmetlerini veriyoruz.'},
  {q:'Gerçekten 10 dakikada geliyor musunuz?',a:'Yakın hizmet noktalarında 10 dakikada ulaşmayı hedefliyoruz. Bulunduğunuz mahalle, trafik ve ekip uygunluğuna göre süre değişebilir. Telefon görüşmesinde size tahmini varış süresini bildiririz.'},
  {q:'Kapım zarar görmeden açılabilir mi?',a:'Uygulanacak yöntem kapının, kilidin ve arızanın durumuna bağlıdır. Öncelik kapı ve kilidi korumaktır; işlem öncesi olası müdahale ve değişim ihtiyacı açıklanır.'},
  {q:'Çilingir ücretini nasıl öğrenebilirim?',a:'Ücret; hizmet türü, kilit modeli, konum ve gerekli parçalara göre belirlenir. Bizi arayıp durumu anlatın veya WhatsApp üzerinden kilit fotoğrafı gönderin. İşlem başlamadan önce kapsam ve ücret üzerinde anlaşılır.'},

@@ -1,9 +1,12 @@
 {
   "name": "alfa-cilingir",
+  "main": "src/worker.js",
   "compatibility_date": "2026-10-06",
   "assets": {
     "directory": "./dist",
-    "not_found_handling": "404-page"
+    "binding": "ASSETS",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/*", "!/_astro/*", "!/images/*"]
   },
   "routes": [
     { "pattern": "alfacilingir.com", "custom_domain": true },

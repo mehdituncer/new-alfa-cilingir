@@ -5,6 +5,6 @@ const {service}=Astro.props;
 const image=serviceImages[service.slug];
 ---
 <a href={'/hizmetler/'+service.slug+'/'} class="service-card" data-reveal>
- <div class="service-image"><img src={image.src} srcset={`${image.small} 640w, ${image.src} 1280w`} sizes="(max-width:600px) 100vw, (max-width:960px) 50vw, 33vw" width="1280" height="853" alt={image.alt} loading="lazy" decoding="async"/><span class="card-image-icon"><Icon name={service.icon} size={22}/></span></div>
+ <div class="service-image"><img src={image.src} srcset={image.srcset} sizes="(max-width:600px) 100vw, (max-width:960px) 50vw, 33vw" width="1280" height="853" alt={image.alt} loading="lazy" decoding="async"/><span class="card-image-icon"><Icon name={service.icon} size={22}/></span></div>
  <div class="service-copy"><div class="service-title-line"><h3>{service.title}</h3><span class="card-arrow"><Icon name="arrow" size={18}/></span></div><p>{service.summary}</p></div>
 </a>
